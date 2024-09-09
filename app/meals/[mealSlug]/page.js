@@ -8,6 +8,7 @@ export default function MealDetailsPage({ params }) {
   if (!meal) {
     notFound();
   }
+  console.log(meal);
   meal.instructions = meal.instructions.replace(/\n/g, "<br/>");
   return (
     <>
